@@ -1,0 +1,36 @@
+.projects {
+    padding: 3rem 1.5rem;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: var(--secondary-text);
+  }
+  

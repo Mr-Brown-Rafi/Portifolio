@@ -1,0 +1,12 @@
+:root {
+    --primary-bg: #1f2937;
+    --secondary-bg: #374151;
+    --primary-text: #ffffff;
+    --secondary-text: #d1d5db;
+    --highlight: #3b82f6;
+    --highlight-hover: #2563eb;
+    --card-bg: #ffffff;
+    --card-border: #e5e7eb;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
