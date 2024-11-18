@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-bg);
+    /* background-color: var(--primary-bg); */
+    background: linear-gradient(to right, #606c78 0%, #c9d8df 100%);
     color: var(--primary-text);
     text-align: center;
   }

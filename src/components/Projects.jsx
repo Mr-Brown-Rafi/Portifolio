@@ -9,7 +9,7 @@ function Projects() {
   ];
 
   return (
-    <section className="projects">
+    <section className="projects" id='projects'>
       <h2>Projects</h2>
       <div className="project-grid">
         {projects.map((project, index) => (

@@ -5,7 +5,7 @@ function Skills() {
   const skills = ['.NET', 'React', 'DevOps', 'MongoDB', 'FluentValidation'];
 
   return (
-    <section className="skills">
+    <section className="skills" id='skills'>
       <h2>Skills</h2>
       <ul className="skills-list">
         {skills.map((skill, index) => (

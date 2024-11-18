@@ -1,6 +1,8 @@
 .skills {
-    padding: 3rem 1.5rem;
-    background-color: var(--secondary-bg);
+    min-height: 100vh;
+    padding: 5rem 1.5rem;
+    /* background-color: var(--secondary-bg); */
+    background: linear-gradient(to left, #606c78 0%, #c9d8df 100%);
     color: var(--primary-text);
     text-align: center;
   }
