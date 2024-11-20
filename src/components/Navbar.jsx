@@ -46,7 +46,7 @@ const Navbar = () => {
           alt="Brand Logo" 
           className="brand-logo" 
         />
-        <div className="portfolio-name">Rafi's Portfolio</div>
+        <div className="portfolio-name">Portfolio</div>
       </div>
       <div
         className={`nav-links ${isMenuOpen ? "active" : ""}`}
