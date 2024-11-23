@@ -100,3 +100,29 @@
 .contact-social a:hover {
   text-decoration: underline;
 }
+
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--highlight);  /* Uses your highlight color */
+  margin-right: 8px;
+}
+
+.contact-social a {
+  color: var(--highlight);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.contact-social a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.contact-social a:hover .social-icon {
+  opacity: 0.8;
+}
