@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh; /* Full viewport height */
-  background: linear-gradient(to right, #798790, #a8b0b9); /* Background gradient */
+  /* background: linear-gradient(to right, #798790, #a8b0b9);  Background gradient */
+  background:  var(--secondary-bg);
   color: white;
   padding: 2rem;
 }

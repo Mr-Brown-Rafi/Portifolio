@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #282c34;
+    /* background-color: #282c34; */
+    background:  var(--primary-bg);
     color: white;
     position: sticky;
     top: 0;
@@ -13,7 +14,7 @@
   .navbar .portfolio-name {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #61dafb;
+    color: var(--highlight);
   }
   
   .nav-links {
@@ -32,12 +33,12 @@
   }
   
   .nav-links a:hover {
-    background-color: #61dafb;
+    background-color: var(--highlight);
     color: #282c34;
   }
   
   .nav-links a.active {
-    background-color: #61dafb;
+    background-color: var(--highlight);
     color: #282c34;
   }
   

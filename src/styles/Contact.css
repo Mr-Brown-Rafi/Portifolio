@@ -1,6 +1,7 @@
 .contact {
   padding: 5rem 1.5rem;
-  background: linear-gradient(to left, #606c78 0%, #c9d8df 100%);
+  /* background: linear-gradient(to left, #606c78 0%, #c9d8df 100%); */
+  background: var(--secondary-bg);
   color: var(--primary-text);
   text-align: center;
 }
