@@ -2,26 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
-  /* background: linear-gradient(to right, #798790, #a8b0b9);  Background gradient */
-  background:  var(--secondary-bg);
+  height: 100vh;
+  background: var(--secondary-bg);
   color: white;
   padding: 2rem;
 }
 
 .hero-left,
 .hero-right {
-  flex: 1; /* Equal width for both parts */
-  /*display: flex;*/
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 
 .hero-photo {
-  width: 60%; /* Adjust the photo size */
-  max-width: 60%; /* Ensure it doesn't grow too large */
-  border-radius: 50%; /* Circular photo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  width: 75%;
+  max-width: 75%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-right {
@@ -32,6 +30,24 @@
 .hero-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  min-height: 3.5rem;
+}
+
+.static-text {
+  white-space: pre;
+}
+
+.typing-text {
+  white-space: pre;
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-quote {
@@ -42,23 +58,27 @@
 
 .hero-liner {
   font-size: 1.2rem;
-  color: #dfe6eb; /* Subtle contrasting color */
+  color: #dfe6eb;
 }
 
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column; /* Stack items on smaller screens */
+    flex-direction: column;
     text-align: center;
   }
 
   .hero-left,
   .hero-right {
-    flex: unset; /* Remove equal width */
-    width: 100%; /* Full width for each part */
+    flex: unset;
+    width: 100%;
   }
 
   .hero-photo {
     width: 50%;
     max-width: 200px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
   }
 }
