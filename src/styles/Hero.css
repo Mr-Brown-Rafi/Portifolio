@@ -4,7 +4,6 @@
   justify-content: center;
   height: 100vh;
   background: var(--secondary-bg);
-  color: white;
   padding: 2rem;
 }
 
@@ -19,7 +18,7 @@
   width: 75%;
   max-width: 75%;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--card-shadow);
 }
 
 .hero-right {
@@ -35,14 +34,19 @@
 
 .static-text {
   white-space: pre;
+  color: var(--primary-text);
 }
 
 .typing-text {
   white-space: pre;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
 }
 
 .cursor {
   animation: blink 1s step-end infinite;
+  color: var(--primary-text);
 }
 
 @keyframes blink {
@@ -54,17 +58,61 @@
   font-size: 1.5rem;
   font-style: italic;
   margin-bottom: 1rem;
+  color: var(--secondary-text);
 }
 
 .hero-liner {
   font-size: 1.2rem;
-  color: #dfe6eb;
+  color: var(--secondary-text);
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--card-shadow);
+}
+
+.btn-primary {
+  background-color: var(--highlight);
+  color: var(--primary-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--highlight-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-text);
+  border: 2px solid var(--highlight);
+}
+
+.btn-secondary:hover {
+  background-color: var(--highlight);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
+    height: auto;
+    min-height: 100vh;
   }
 
   .hero-left,
@@ -80,5 +128,15 @@
   
   .hero-title {
     font-size: 2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
   }
 }
