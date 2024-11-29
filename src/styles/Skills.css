@@ -1,7 +1,7 @@
 /* SkillsSection.css */
 .skills-section {
   padding: 20px;
-  background-color: #f4f4f9;
+  background-color: var(--secondary-bg);
   color: #333;
   font-family: Arial, sans-serif;
 }
@@ -22,7 +22,8 @@
   transition: transform 0.2s ease-in-out;
   height: 250px; /* Set consistent height */
   width: 200px;  /* Set consistent width */
-  margin: 0 20px; /* Add spacing between cards */
+  margin: 0 40px; /* Add spacing between cards */
+  background-color: var(--primary-bg);
 }
 
 .skills-slider .skill-category:hover {
