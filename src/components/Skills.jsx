@@ -41,6 +41,8 @@ const SkillsSection = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    centerMode: true, // Enables spacing between slides
+    centerPadding: "30px", // Adjust padding between slides
     responsive: [
       {
         breakpoint: 768,
@@ -58,6 +60,7 @@ const SkillsSection = () => {
       },
     ],
   };
+  
 
   return (
     <div className="skills-section">

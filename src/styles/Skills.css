@@ -13,17 +13,21 @@
   color: #007acc;
 }
 
+.slick-slide {
+  padding: 0 20px; /* Adjust spacing between slides */
+  box-sizing: border-box; /* Ensure padding doesn't break the layout */
+}
+
 .skills-slider .skill-category {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
   transition: transform 0.2s ease-in-out;
-  height: 250px; /* Set consistent height */
-  width: 200px;  /* Set consistent width */
-  margin: 0 40px; /* Add spacing between cards */
+  height: 250px; /* Consistent height */
   background-color: var(--primary-bg);
 }
+
 
 .skills-slider .skill-category:hover {
   transform: scale(1.05);
