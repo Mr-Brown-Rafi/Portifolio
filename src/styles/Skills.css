@@ -1,6 +1,6 @@
 /* SkillsSection.css */
 .skills-section {
-  padding: 20px;
+  padding: 5rem 1.5rem;
   background-color: var(--secondary-bg);
   color: #333;
   font-family: Arial, sans-serif;
@@ -10,7 +10,9 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #007acc;
+  color: var(--primary-text);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .slick-slide {
@@ -36,7 +38,7 @@
 .category-header {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--primary-text);
   border-bottom: 2px solid #007acc;
   display: inline-block;
   padding-bottom: 5px;
@@ -51,5 +53,19 @@
 .skill-item {
   font-size: 1rem;
   margin: 5px 0;
-  color: #555;
+  color: var(--primary-text);
 }
+
+.slick-prev,
+.slick-next {
+  font-size: 4rem; /* Increase font size */
+  z-index: 1000; /* Ensure arrows are visible over content */
+  color: #007acc; /* Optional: Match your theme color */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #005f99; /* Optional: Add hover effect */
+  transform: scale(1.2); /* Slight enlargement on hover */
+}
+

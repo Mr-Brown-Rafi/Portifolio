@@ -63,8 +63,8 @@ const SkillsSection = () => {
   
 
   return (
-    <div className="skills-section">
-      <h2 className="skills-header">Technical Skills</h2>
+    <div className="skills-section" id="skills">
+      <h2 className="skills-header">Skills</h2>
       <Slider {...settings} className="skills-slider">
         {skills.map((skillCategory, index) => (
           <div key={index} className="skill-category">
