@@ -4,57 +4,56 @@ import '../styles/Contact.css';
 import '../styles/variables.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const [status, setStatus] = useState('');
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false); // Tracks submission state
+  const [popupMessage, setPopupMessage] = useState(''); // Stores the message for the popup
+  const [showPopup, setShowPopup] = useState(false); // Tracks popup visibility
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus('Sending...');
 
+    // Prevent multiple submissions
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+
+    // Send the first email
     emailjs
       .send(
         'service_q5f3fo4',
         'template_xrzsl2n',
         formData,
-        ''
+        'RdlrHBcr-SgiUdQT6'
       )
-      .then(
-        (result) => {
-          console.log('First email sent:', result);
-          // Send the second email after the first succeeds
-          return emailjs.send(
-            'service_q5f3fo4',
-            'template_n2u39ob',
-            formData,
-            ''
-          );
-        }
-      )
-      .then(
-        (result) => {
-          console.log('Second email sent:', result);
-          setStatus('Message sent successfully to both recipients!');
-          setFormData({ name: '', email: '', message: '' }); // Reset form
-        }
-      )
-      .catch((error) => {
-        console.error('Error sending email:', error);
-        setStatus('Failed to send the message. Please try again.');
+      .then(() => {
+        // Send the second email
+        return emailjs.send(
+          'service_q5f3fo4',
+          'template_n2u39ob',
+          formData,
+          'RdlrHBcr-SgiUdQT6'
+        );
+      })
+      .then(() => {
+        setPopupMessage('Your message has been sent successfully to Rafi 😊. \n Check your inbox for more details.');
+        setShowPopup(true);
+        setFormData({ name: '', email: '', message: '' }); // Reset form
+      })
+      .catch(() => {
+        setPopupMessage('Failed to send the message. Please try again.');
+        setShowPopup(true);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
+  };
 
+  const closePopup = () => {
+    setShowPopup(false);
   };
 
   return (
@@ -99,11 +98,14 @@ function Contact() {
             onChange={handleChange}
           ></textarea>
 
-          <button type="submit" className="contact-btn">Send Message</button>
+          <button
+            type="submit"
+            className="contact-btn"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </button>
         </form>
-
-        {/* Status Message */}
-        {status && <p className="contact-status">{status}</p>}
 
         {/* Social Links */}
         <div className="contact-social">
@@ -156,6 +158,18 @@ function Contact() {
           </ul>
         </div>
       </div>
+
+      {/* Popup */}
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <p>{popupMessage}</p>
+            <button className="popup-close" onClick={closePopup}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
