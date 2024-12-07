@@ -1,39 +1,39 @@
 .projects {
-    min-height: 100vh;
-    padding: 5rem 1.5rem;
-    /* background-color: var(--primary-bg); */
-    /* background: linear-gradient(to right, #606c78 0%, #c9d8df 100%); */
-    background:  var(--secondary-bg);
-    color: var(--primary-text);
-    text-align: center;
-  }
-  
-  .projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .project-card {
-    padding: 1rem;
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    box-shadow: var(--card-shadow);
-  }
-  
-  .project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .project-card p {
-    font-size: 1rem;
-    color: var(--secondary-text);
-  }
-  
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.project-industry,
+.project-type {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
