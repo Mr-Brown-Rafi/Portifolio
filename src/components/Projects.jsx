@@ -6,25 +6,25 @@ function Projects() {
     { 
       name: 'Product Assessment Toolkit', 
       industry: 'Retail', 
-      type: 'Scratch Application', 
+      type: 'Greenfield Development', 
       description: 'This application helps assess returned products from customers. Each product follows a specific procedure, and some may lack accessories. The application ensures product quality, records missing or faulty parameters, and consolidates data from various locations. It presents visuals to aid decisions for secondary markets.' 
     },
     { 
       name: 'Device Lookup Service', 
       industry: 'Retail', 
-      type: 'Scratch Project', 
+      type: 'Greenfield Development', 
       description: 'An abstraction service over external APIs to determine the lock status of electronic devices connected to cellular networks. It checks whether a device is carrier-locked or user-locked by communicating with respective device company services.' 
     },
     { 
       name: 'Eclipse', 
-      industry: 'Banking', 
-      type: 'Migrated Legacy App to .NET Core', 
+      industry: 'Banking and Finance', 
+      type: 'Legacy Modernization Project', 
       description: 'A credit card processing application for new consumers. It adjusts credit limits based on FICO scores, blocks credit cards failing certain criteria, and supports lending and underwriting operations.' 
     },
     { 
       name: 'CLAOps', 
-      industry: 'Banking and Finance Sector', 
-      type: 'Migration', 
+      industry: 'Banking and Finance', 
+      type: 'Legacy Modernization Project', 
       description: 'A centralized software for logging and monitoring the health of applications and services. It provides detailed visualizations based on collected logs to ensure system stability and performance.' 
     }
   ];
