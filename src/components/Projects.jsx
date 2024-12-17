@@ -31,7 +31,7 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-      <h2>Projects</h2>
+      <h2 className="project-heading">Projects</h2>
       <div className="project-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
