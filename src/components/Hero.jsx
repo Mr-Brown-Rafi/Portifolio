@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
-import Dp from "../assets/Portfolio_pic-transformed.jpeg";
+import Dp from "../assets/Rafi_balckSuit.png";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -115,6 +115,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
+      
     </section>
   );
 };

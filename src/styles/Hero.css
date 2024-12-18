@@ -2,9 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background: var(--secondary-bg);
+  /*height: 100vh;*/
+  background:  #f9f9f9;
   padding: 2rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-left,
@@ -15,15 +17,16 @@
 }
 
 .hero-photo {
-  width: 75%;
-  max-width: 75%;
+  width: 60%;
+  height: 60%;
+  
   border-radius: 50%;
   box-shadow: var(--card-shadow);
 }
 
 .hero-right {
   text-align: left;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .hero-title {
@@ -34,7 +37,7 @@
 
 .static-text {
   white-space: pre;
-  color: var(--primary-text);
+  color: #555;
 }
 
 .typing-text {
@@ -46,7 +49,7 @@
 
 .cursor {
   animation: blink 1s step-end infinite;
-  color: var(--primary-text);
+  color: #555;
 }
 
 @keyframes blink {
@@ -58,12 +61,12 @@
   font-size: 1.5rem;
   font-style: italic;
   margin-bottom: 1rem;
-  color: var(--secondary-text);
+  color: #333;
 }
 
 .hero-liner {
   font-size: 1.2rem;
-  color: var(--secondary-text);
+  color: #333;
   margin-bottom: 2rem;
 }
 
@@ -97,7 +100,7 @@
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--primary-text);
+  color: var(--highlight);
   border: 2px solid var(--highlight);
 }
 
@@ -105,6 +108,7 @@
   background-color: var(--highlight);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  color: var(--primary-text);
 }
 
 @media (max-width: 768px) {
