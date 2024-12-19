@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Portifolio/static/css/main.29ecac62.css",
+    "main.js": "/Portifolio/static/js/main.19bef69e.js",
+    "static/js/453.83234151.chunk.js": "/Portifolio/static/js/453.83234151.chunk.js",
+    "static/media/Rafi_balckSuit.png": "/Portifolio/static/media/Rafi_balckSuit.f2cfa46ab0f3028f3276.png",
+    "static/media/AZ204.png": "/Portifolio/static/media/AZ204.f30e827d0e4c9c8da5e4.png",
+    "static/media/FSE.jpg": "/Portifolio/static/media/FSE.b77229bf6c213648386d.jpg",
+    "index.html": "/Portifolio/index.html",
+    "main.29ecac62.css.map": "/Portifolio/static/css/main.29ecac62.css.map",
+    "main.19bef69e.js.map": "/Portifolio/static/js/main.19bef69e.js.map",
+    "453.83234151.chunk.js.map": "/Portifolio/static/js/453.83234151.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29ecac62.css",
+    "static/js/main.19bef69e.js"
+  ]
+}
