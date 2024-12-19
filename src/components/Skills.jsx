@@ -3,7 +3,7 @@ import {
   BookIcon, 
   CodeIcon, 
   DatabaseIcon, 
-  GlobeIcon, 
+  SettingsIcon, 
   LayersIcon, 
   ServerIcon 
 } from "lucide-react";
@@ -14,33 +14,33 @@ const Skills = () => {
     {
       category: "Languages",
       icon: <CodeIcon className="icon" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "HTML5", "CSS3"],
+      skills: ["C#","JavaScript", "TypeScript", "Python", "HTML5", "CSS3"],
     },
     {
-      category: "Frontend Frameworks",
-      icon: <GlobeIcon className="icon" />,
-      skills: ["React", "Next.js", "Vue.js", "Angular", "Svelte"],
-    },
-    {
-      category: "Backend Technologies",
+      category: "Web Technologies",
       icon: <ServerIcon className="icon" />,
-      skills: ["Node.js", "Express.js", "Django", "Flask", "Spring Boot"],
+      skills: [".NET Core", "React.js", "Blazor", "Entity Framework Core", "xUnit"],
     },
     {
       category: "Databases",
       icon: <DatabaseIcon className="icon" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis"],
+      skills: ["MongoDB", "MS SQL Server", "MySQL", "Redis"],
     },
     {
       category: "Cloud & DevOps",
       icon: <LayersIcon className="icon" />,
-      skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "GitHub Actions"],
+      skills: ["Azure", "Docker", "Kubernetes", "CI/CD", "Jenkins"],
     },
     {
-      category: "Libraries & Tools",
+      category: "Tools & Version Control",
       icon: <BookIcon className="icon" />,
-      skills: ["Redux", "GraphQL", "Tailwind CSS", "Jest", "Webpack"],
+      skills: ["Visual Studio", "VS Code","Postman", "SSMS", "Git", "Jira"],
     },
+    {
+      category: "Methodologies",
+      icon: <SettingsIcon className="icon" />,
+      skills: ["Agile", "Scrum"],
+    }
   ];
 
   return (
